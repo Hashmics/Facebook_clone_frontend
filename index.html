@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <title>SocialBook</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav__left">
+            <img src="/images/logo.png" class="logo">
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav__right">
+            <div class="search__box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav__user-icon online" onclick="settingsMenusToggle()">
+                <img src="images/profile-pic.png">
+            </div>
+        </div>
+        <!------------------ Settings Menu ---------------------->
+        <div class="settings__menu">
+
+            <div id="dark__btn">
+                <span></span>
+            </div>
+
+            <div class="settings__menu-inner">
+                <div class="user__profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">See Your Profile </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user__profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feed Back</p>
+                        <a href="#">Help </a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="setting__links">
+                    <img src="images/setting.png" class="settings__icon">
+                    <a href="#">Settings and Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting__links">
+                    <img src="images/help.png" class="settings__icon">
+                    <a href="#">Help and Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting__links">
+                    <img src="images/display.png" class="settings__icon">
+                    <a href="#">Display and Access <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting__links">
+                    <img src="images/logout.png" class="settings__icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="left__sidebar">
+            <div class="important__links">
+                <a href="#"><img src="images/news.png"> Latest News</a>
+                <a href="#"><img src="images/friends.png"> Friends</a>
+                <a href="#"><img src="images/group.png"> Group</a>
+                <a href="#"><img src="images/marketplace.png"> Market Place </a>
+                <a href="#"><img src="images/watch.png"> Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut__links">
+                <p> Your Shortcuts </p>
+                <a href="#"><img src="images/shortcut-1.png">Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png">Web Design Course</a>
+                <a href="#"><img src="images/shortcut-3.png">Full Stack Development</a>
+                <a href="#"><img src="images/shortcut-4.png">Website Experts</a>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main__content">
+
+            <div class="story__gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Alison </p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>John Doe</p>
+                </div>
+            </div>
+            <div class="write__post-container">
+                <div class="user__profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>John Nicholson</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post__input-container">
+                    <textarea rows="3" placeholder="What's on your mind John?"></textarea>
+                    <div class="add__post-links">
+                        <a href="#"><img src="images/live-video.png">Live Video</a>
+                        <a href="#"><img src="images/photo.png">Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post__container">
+                <div class="post__row">
+                    <div class="user__profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>08 Feb 2023, 17:43 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post__text"> Subscribe <span> @Travel With ABR Hashmi</span> to watch Daily Vlogs <a
+                        href="#">Travel With ABR Hashmi</a></p>
+                <img src="images/feed-image-1.png" class="post__img">
+                <div class="post__row">
+                    <div class="activity__icons">
+                        <div><img src="images/like-blue.png">120</div>
+                        <div><img src="images/comments.png">100</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+                    <div class="post__profile-icon">
+                        <img src="images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post__container">
+                <div class="post__row">
+                    <div class="user__profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>08 Feb 2023, 17:43 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-caret-down"></i></a>
+                </div>
+                <p class="post__text"> Subscribe <span> @Travel With ABR Hashmi</span> to watch Daily Vlogs <a
+                        href="#">Travel With ABR Hashmi</a></p>
+                <img src="images/feed-image-2.png" class="post__img">
+                <div class="post__row">
+                    <div class="activity__icons">
+                        <div><img src="images/like-blue.png">120</div>
+                        <div><img src="images/comments.png">100</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+                    <div class="post__profile-icon">
+                        <img src="images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post__container">
+                <div class="post__row">
+                    <div class="user__profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>08 Feb 2023, 17:43 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-caret-down"></i></a>
+                </div>
+                <p class="post__text"> Subscribe <span> @Travel With ABR Hashmi</span> to watch Daily Vlogs <a
+                        href="#">Travel With ABR Hashmi</a></p>
+                <img src="images/feed-image-3.png" class="post__img">
+                <div class="post__row">
+                    <div class="activity__icons">
+                        <div><img src="images/like-blue.png">120</div>
+                        <div><img src="images/comments.png">100</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+                    <div class="post__profile-icon">
+                        <img src="images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post__container">
+                <div class="post__row">
+                    <div class="user__profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>08 Feb 2023, 17:43 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-caret-down"></i></a>
+                </div>
+                <p class="post__text"> Subscribe <span> @Travel With ABR Hashmi</span> to watch Daily Vlogs <a
+                        href="#">Travel With ABR Hashmi</a></p>
+                <img src="images/feed-image-4.png" class="post__img">
+                <div class="post__row">
+                    <div class="activity__icons">
+                        <div><img src="images/like-blue.png">120</div>
+                        <div><img src="images/comments.png">100</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+                    <div class="post__profile-icon">
+                        <img src="images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post__container">
+                <div class="post__row">
+                    <div class="user__profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>08 Feb 2023, 17:43 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-caret-down"></i></a>
+                </div>
+                <p class="post__text"> Subscribe <span> @Travel With ABR Hashmi</span> to watch Daily Vlogs <a
+                        href="#">Travel With ABR Hashmi</a></p>
+                <img src="images/feed-image-5.png" class="post__img">
+                <div class="post__row">
+                    <div class="activity__icons">
+                        <div><img src="images/like-blue.png">120</div>
+                        <div><img src="images/comments.png">100</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+                    <div class="post__profile-icon">
+                        <img src="images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load__more-btn">Load More</button>
+        </div>
+        <!-- Right Sidebar -->
+        <div class="right__sidebar">
+            <div class="sidebar__title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="events">
+                <div class="left__event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right__event">
+                    <h4>Social Media</h4>
+                    <p> <i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="events">
+                <div class="left__event">
+                    <h3>20</h3>
+                    <span>March</span>
+                </div>
+                <div class="right__event">
+                    <h4>Tech Meeting</h4>
+                    <p> <i class="fas fa-map-marker-alt"></i>Google Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar__title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar__ads">
+            <div class="sidebar__title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online__chat">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online__chat">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="online__chat">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Samona Rose</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2023 - Travel With ABR Hashmi</p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
